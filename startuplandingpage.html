@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--to make the website mobile friendly also-->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="startuplanding.css">
+  </head>
+  <body>
+    <div class="container d-flex align-items-center h-100"> <!--we want everything in a container--> <!--container is bootstrap class--> <!--d-flex bootstrap class used to enable flexbox-->  <!--align-items-center is flexbox class used to align items to the center--> <!--however we see that inspite of writing align-items-center nothing was happening, this is bcoz if we inspect element we saw that container was not covering the full length of the page--> <!--to make sure that container covers full length of page we have a class called h-100 where h means height-->
+      <div class="row"> <!-- we want h1 hr and button in a row--> <!--bootstrap class-->
+        <header class="text-center col-12">  <!--bootstrap class used to center the text--> <!--col-12 means we want to use all 12 columns-->
+          <h1 class="text-uppercase"><strong>The Biggest Startup Event of the Year</strong></h1> <!--text-uppercase is a bootstrap class to uppercase text-->
+        </header>
+        <div class="buffer col-12"></div> <!--we want to have space bw writing and button so we want to buffer them away from each other so we create a custom class called buffer-->
+        <section class="text-center col-12">
+          <hr>
+          <a href="https://mailchi.mp/bde1137d5a2c/ztmstudents"> <!--whenever we click on button we want this link to open-->
+          <button class="btn btn-primary btn-xl">Find out more</button> <!--btn and btn-primary are bootstrap classes u can see on website and btn-xl is not a bootstrap class, we r creating that custom class to design the button-->
+        </a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

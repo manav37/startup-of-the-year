@@ -1,0 +1,50 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; /*center=starting position of the image(center) no-repeat means do not repeat the image, fixed is a background-attachment property which means image will not scroll with the page*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; /*resize the image to cover the entire container even if it has to strech the image or cut it*/
+}
+
+h1{
+  font-size: 3rem;
+  color: #e2dbdb;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 65px; /*how long do we want the horizontal line to be*/
+    opacity: 1;  
+}
+
+.buffer{
+  height: 10rem;
+}
+
+.btn{  /* just adding on to the bootstrap classes*/
+  font-weight: 700;
+  border-radius: 300px;/*to make edges of button circular*/
+  text-transform: uppercase;
+}
+
+.btn-primary{  /* just adding on to the bootstrap classes*/
+  background-color: #F05F44;
+  border-color: #F05F44;
+}
+
+.btn-primary:hover{
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px; /*increase border width when hover over button*/
+}
+
+.btn-xl{
+  padding: 1rem 2rem;
+
+}
